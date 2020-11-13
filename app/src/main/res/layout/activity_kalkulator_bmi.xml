@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KalkulatorBmi">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Silahkan pilih jenis kelamain anda"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/jeniskelamin" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:id="@+id/evTinggi"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Inputkan tinggi anda"
+            android:inputType="number"
+            android:background="@color/teal_700"
+            android:textColor="@color/cardview_light_background"
+            app:startIconDrawable="@drawable/ic_accessibility"
+            app:startIconTint="@color/cardview_dark_background" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:id="@+id/evBerat"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Inputkan berat anda"
+            android:background="@color/teal_700"
+            android:textColor="@color/cardview_light_background"
+            android:inputType="number"
+            app:startIconDrawable="@drawable/ic_accessibility"
+            app:startIconTint="@color/cardview_dark_background" />
+
+        <Button
+            android:id="@+id/btnkalkulasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Hasil" />
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textSize="50dp" />
+    <TextView
+        android:id="@+id/posturtubuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Postur tubuh anda"
+        android:textSize="20dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HitungUmur">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvumuranda"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Inputkan tanggal lahir anda"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@color/teal_200"
+        android:textColor="@color/cardview_light_background"
+        />
+
+    <Button
+        android:id="@+id/btnhasil"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Hitung"
+        android:textColor="@color/cardview_light_background" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur anda"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/txtumursekarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="80dp"
+        android:hint="0"
+        />
+
+</LinearLayout>
