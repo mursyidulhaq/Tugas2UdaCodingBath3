@@ -10,16 +10,15 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/tvumuranda"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:hint="Inputkan tanggal lahir anda"
+        android:background="@color/teal_200"
+        android:hint="Inputkan tahun lahir anda"
         android:inputType="number"
         android:padding="10dp"
-        android:background="@color/teal_200"
-        android:textColor="@color/cardview_light_background"
-        />
+        android:textColor="@color/cardview_light_background" />
 
     <Button
         android:id="@+id/btnhasil"
